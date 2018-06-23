@@ -1,0 +1,126 @@
+@import "base";
+@import "normalize";
+@import "param";
+@import "variable";
+
+.sn_container {
+    width: 100%;
+    height: 2000px;
+    background-color: red;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+.sn_header {
+    width: 100%;
+    height: 90rem/@base;
+    background-color: @color;
+    padding: 0 90rem/@base;
+    position: fixed;
+    top: 0;
+    max-width: 750px;
+
+    .header_left,
+    .header_right {
+        width: 90rem/@base;
+        height: 90rem/@base;
+        position: absolute;
+        top: 0;
+    }
+
+    .header_left {
+        left: 0;
+        background: url("../images/icon_category.png") no-repeat center;
+        background-size: 44rem/@base 70rem/@base;
+        
+    }
+    .search {
+        height: 90rem/@base;
+        position: relative;
+        padding-top: 15rem/@base;
+
+        .sn_icon {
+            position: absolute;
+            left: 15rem/@base;
+            top: 30rem/@base;
+            width: 50rem/@base;
+            height: 60rem/@base;
+            background: url("../images/icon_search.png") no-repeat;
+            background-size: 27rem/@base 28rem/@base;
+        }
+
+        input {
+            width: 100%;
+            height: 60rem/@base;
+            padding-left: 50rem/@base;
+            border-radius: 15rem/@base;
+            font-size: 30rem/@base;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    .header_right {
+        right: 0;
+        background: url("../images/icon_cart.png") no-repeat center;
+        background-size: 63rem/@base 68rem/@base;
+        
+    }
+}
+.sn_banner {
+    margin-top: 90rem/@base;
+}
+.sn_info {
+    background-color: #fff;
+    li {
+        float: left;
+        width: 20%;
+
+        a {
+            display: block;
+            padding: 10rem/@base 0;
+
+            img {
+                width: 80rem/@base;
+                height: 80rem/@base;
+                margin: 0 auto;
+            }
+            p {
+                text-align: center;
+                height: 50rem/@base;
+                font-size: 20rem/@base;
+                line-height: 50rem/@base;
+            }
+        }
+       
+    }
+
+    
+}
+.sn_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100rem/@base;
+    background-color: #fff;
+    li {
+        float: left;
+        width: 20%;
+        
+        a {
+            display: block;
+            padding-top: 10rem/@base;
+
+            img {
+                width: 50rem/@base;
+                height: 50rem/@base;
+                margin: 0 auto;
+            }
+            p {
+                text-align: center;
+                height: 30rem/@base;
+                line-height: 30rem/@base;
+                font-size: 18rem/@base;
+            }
+        }
+    }
+}
