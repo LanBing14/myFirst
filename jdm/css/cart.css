@@ -1,0 +1,90 @@
+.cart_container {
+  width: 100%;
+  height: 2000px;
+  background-color: pink;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.header {
+  height: 44px;
+  padding: 0 44px;
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff, #cccccc);
+}
+.header .header_left,
+.header .header_right {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  padding: 12px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.header .header_left {
+  left: 0;
+  background-position: -20px 0;
+}
+.header .header_right {
+  right: 0;
+  background-position: -60px 0;
+}
+.header .middle {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 20px;
+  overflow: hidden;
+}
+.nav {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+}
+.nav p {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 32px;
+  position: relative;
+}
+.nav p:before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background: url("../images/safe_icon.png") no-repeat;
+  background-size: 18px 18px;
+}
+.checkBox {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  background-position: -180px -90px;
+}
+.checkBox.current {
+  background-position: -180px -70px;
+}
+.content {
+  margin-top: 20px;
+}
+.content .content_header {
+  height: 34px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.content .content_bottom .content_bottom1 {
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+}
